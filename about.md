@@ -9,7 +9,7 @@ The 12th November 2014 marks an important date. This is the date that Microsoft 
 
 I grew up around the world of Unix and Linux but in the early days when we had to choose between .Net and Java I choose to walk the Microsoft path and left the world of Unix behind.  I kept up to date from time to time, pulling down the latest distro from Ubuntu or SUSE or RHEL, but for me productivity and skills transfer was always going to get in the way of Linux becoming king of the desktop for the masses.
 
-Then Apple got really popular. then all the Linux guys started using macbooks and running Virtual Machines. It was cool to be a Unix guy again. Not only cool, but you could actually make a living doing Linux stuff. This certainly wasn't the case when I embraced Microsoft back in 1999.
+Then Apple got really popular. Then all the Linux guys started using macbooks and running Virtual Machines. It was cool to be a Unix guy again. Not only cool, but you could actually make a living doing Linux stuff. This certainly wasn't the case when I embraced Microsoft back in 1999.
 
 And so the scene was set. Two paths had diverged. The Linux and Java camp on one side (more recently joined by the Mac fanboys) and the Microsoft Engineers on the other side.
 
