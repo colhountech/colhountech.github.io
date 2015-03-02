@@ -25,6 +25,8 @@ And then, the world saw Windows 10 preview on desktop, tablet and phone. ...and 
 
 It was cool to love Microsoft again, and both google and apple were starting to look uncool.
 
-This blog is my journey through this landscape on what has happend, what might happen and what is happening today. It's an exciting journey, because I'm pretty sure the Linux and Java camp ain't going to see this coming, and I'm pretty sure that a lot of .Net developers  are going to be real scared of all the changes. For me what it means is that if you are not learning to *Sharpen the Saw* are not going to see this coming either. 
+This blog is my journey through this landscape on what has happend, what might happen and what is happening today. It's an exciting journey, because I'm pretty sure the Linux and Java camp ain't going to see this coming, and I'm pretty sure that a lot of .Net developers that have never dipped a toe in the cross-platform world  are going to be real scared of all the changes. 
 
-So, if you are wise, you are going to have to start investing real time in learning new stuff, and start learning about The New Microsoft. Becasuse everything has changed and if you don't get on board you are very quickly going to become extinct. It's as simple as that.
+For me what it means is that if you are not learning to *Sharpen the Saw*, and stay current, you are not going to see this coming either. 
+
+So devs, if you are wise, you are going to have to start investing real time in learning about The New Microsoft. Becasuse everything has changed and if you don't get on board you are very quickly going to become extinct. It's as simple as that.
