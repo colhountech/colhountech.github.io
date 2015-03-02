@@ -5,7 +5,7 @@ permalink: /about/
 published: true
 ---
 
-The 12th November 2014 marks an important date. This is the date that Microsoft publically announced that they were going to open source the dotnet core and CLR.  I really didn't see this comming. For me at least, this was a game changer.
+The 12th November 2014 marks an important date. This is the date that Microsoft publically announced that they were going to open source the dotnet core and CLR.  I really didn't see this coming. For me at least, this was a game changer.
 
 I grew up around the world of Unix and Linux but in the early days when we had to choose between .Net and Java I choose to walk the Microsoft path and left the world of Unix behind.  I kept up to date from time to time, pulling down the latest distro from Ubuntu or SUSE or RHEL, but for me productivity and skills transfer was always going to get in the way of Linux becomeing king of the desktop for the masses.
 
