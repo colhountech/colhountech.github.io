@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Can you show me how to use Azure"
-published: false
+published: true
 ---
 "Can you show me how to use Azure"? I have been asked the same question many times over the past while. It's an awkward question. Azure isn't a tin-opener. It's a platform, combining many different technologies, tools and service offerings. 
 
