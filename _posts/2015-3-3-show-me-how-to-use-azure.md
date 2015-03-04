@@ -27,9 +27,9 @@ The second question is very different, because it is a realisation that Azure is
 
 Developing an Azure Strategy involves building a clear and simple 3 step plan:
 
-	* Step 1. Where am I now ?
-	* Step 2. Where do I want to be?
-	* Step 3. What do I need to Change to get there?
+* Step 1. Where am I now ?
+* Step 2. Where do I want to be?
+* Step 3. What do I need to Change to get there?
 
 
 Over the next few posts, I will work towards answering these questions in the context of four Key Performance Indicators. These are:
