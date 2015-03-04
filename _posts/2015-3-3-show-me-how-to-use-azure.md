@@ -40,6 +40,3 @@ Over the next few posts, I will work towards answering these questions in the co
 * Repeatability
 
 Next week: Background to an Azure Strategy: Why choose these Key Performance Indicators?
-
---
-(*) I will explain why this is the case in a later post.
