@@ -19,7 +19,7 @@ The real question they are asking is: "Can you help me form an Azure Strategy"?
 
 That's a very different question.
 
-You see, the first question is driven out of fear of being left behind and uncertainty about the future. Business owners are constantly hearing about the Cloud and Azure, but beyond Office365 and perhaps spinning up a VM in Azure and sticking a database driven web-server on it - Which by the way is frankly a waste of time (*) - the whole Azure "thingy" all seems a little too much like Dark Magic.
+You see, the first question is driven out of fear of being left behind and uncertainty about the future. Business owners are constantly hearing about the Cloud and Azure, but beyond Office365 and perhaps spinning up a VM in Azure and sticking a database driven web-server on it - Which by the way is frankly a waste of time (*) - the whole Azure "thingy" all seems a little too much like Dark Magic![Dark Magic](http://colhountech.github.io/images/dark-magic.jpg)
 
 I am constantly seeing developers dip their toes in the world of Azure and getting burnt, and trying to justify their actions to management either by taking the victim stance - "Azure is X" - where X is some derogatory nominilization (Azure is Slow/Immature/Down), or by saying Azure doesn't support Y, where Y is some feature that has nothing to do with Scalable cloud Architecture (such as, Azure doesn't support sticky sessions/ Linked Databases / CONTEXT_INFO objects).
 
