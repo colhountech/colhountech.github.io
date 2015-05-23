@@ -4,8 +4,32 @@ title: "Getting Started with ASP.NET5.0 and the DNX Framework"
 published: true
 ---
 <html>
-
+<style>
+<!--
 <head>
+	
+	p.CODE, li.CODE, div.CODE
+	{mso-style-name:CODE;
+	mso-style-link:"CODE Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:normal;
+	background:#C6D9F1;
+	font-size:8.0pt;
+	font-family:Consolas;
+	color:windowtext;}
+span.CODEChar
+	{mso-style-name:"CODE Char";
+	mso-style-link:CODE;
+	font-family:Consolas;
+	background:#C6D9F1;}
+-->
+</style>
+
 </head>
 
 <body lang=EN-GB link=blue vlink=purple>
@@ -17,10 +41,10 @@ framework</span></p>
 
 <p class=MsoNormal><span lang=EN>&nbsp;</span></p>
 
-<p class=MsoNormal><span lang=EN>I'm updating my Android SDK packages.</span></p>
+<p class=MsoNormal><span lang=EN>I m updating my Android SDK packages.</span></p>
 
-<p class=MsoNormal><span lang=EN>While I'm waiting, I'm going to install the latest
-DNX and aspnet5.0. It's a clean VM. No Visual Studio installed. Just Xamarin
+<p class=MsoNormal><span lang=EN>While I m waiting, I m going to install the latest
+DNX and aspnet5.0. It s a clean VM. No Visual Studio installed. Just Xamarin
 Studio, so should be a good clean install experience. Well. I was almost right.</span></p>
 
 <p class=MsoNormal><span lang=EN>If you want to know more, go to <a
@@ -32,8 +56,8 @@ administrator), enter the following:</span></p>
 <p class=CODE><span lang=EN>&nbsp;</span></p>
 
 <p class=CODE><span lang=EN>@powershell -NoProfile -ExecutionPolicy
-unrestricted -Command &quot;&amp;{$Branch='dev';iex ((new-object
-net.webclient).DownloadString('https://raw.githubusercontent.com/aspnet/Home/dev/dnvminstall.ps1'))}&quot;</span></p>
+unrestricted -Command &quot;&amp;{$Branch= dev ;iex ((new-object
+net.webclient).DownloadString( https://raw.githubusercontent.com/aspnet/Home/dev/dnvminstall.ps1 ))}&quot;</span></p>
 
 <p class=CODE><span lang=EN>&nbsp;</span></p>
 
@@ -54,7 +78,7 @@ prompt.</span></p>
 
 <p class=MsoNormal><span lang=EN>&nbsp;</span></p>
 
-<p class=MsoNormal><span lang=EN>And I get the location where it is setup:' <b>C:\Users\micheal\.dnx\bin\dnvm.cmd</b></span></p>
+<p class=MsoNormal><span lang=EN>And I get the location where it is setup:  <b>C:\Users\micheal\.dnx\bin\dnvm.cmd</b></span></p>
 
 <p class=MsoNormal><span lang=EN>Now run dnvm to see the OOBE.</span></p>
 
@@ -77,7 +101,7 @@ src="images/Getting%20Started%20with%20ASPNET5.0%20and%20the%20DNX%20Framework_f
 border=0 width=208 height=256 id="Picture 61"
 src="images/Getting%20Started%20with%20ASPNET5.0%20and%20the%20DNX%20Framework_files/image004.jpg"></p>
 
-<p class=MsoNormal><span lang=EN>That's better.' Let's install a DNX.</span></p>
+<p class=MsoNormal><span lang=EN>That s better.  Let s install a DNX.</span></p>
 
 <p class=CODE><span lang=EN>&nbsp;</span></p>
 
@@ -90,8 +114,8 @@ src="images/Getting%20Started%20with%20ASPNET5.0%20and%20the%20DNX%20Framework_f
 <p class=MsoNormal><img border=0 width=672 height=276 id="Picture 64"
 src="images/Getting%20Started%20with%20ASPNET5.0%20and%20the%20DNX%20Framework_files/image005.jpg"></p>
 
-<p class=MsoNormal><span lang=EN>Well that didn't work. So, I need to say what
-version to install. Let's go with latest stable version of dnx.</span></p>
+<p class=MsoNormal><span lang=EN>Well that didn t work. So, I need to say what
+version to install. Let s go with latest stable version of dnx.</span></p>
 
 <p class=CODE><span lang=EN>&nbsp;</span></p>
 
@@ -105,7 +129,7 @@ version to install. Let's go with latest stable version of dnx.</span></p>
 
 <p class=MsoNormal>&nbsp;</p>
 
-<p class=MsoNormal>That's better. We are off to the races'</p>
+<p class=MsoNormal>That s better. We are off to the races </p>
 
 <p class=MsoNormal><img border=0 width=669 height=275 id="Picture 67"
 src="images/Getting%20Started%20with%20ASPNET5.0%20and%20the%20DNX%20Framework_files/image006.jpg"></p>
@@ -115,17 +139,17 @@ src="images/Getting%20Started%20with%20ASPNET5.0%20and%20the%20DNX%20Framework_f
 <p class=MsoNormal><img border=0 width=672 height=278 id="Picture 76"
 src="images/Getting%20Started%20with%20ASPNET5.0%20and%20the%20DNX%20Framework_files/image007.jpg"></p>
 
-<p class=MsoNormal><span lang=EN>Let's do what the man says:</span></p>
+<p class=MsoNormal><span lang=EN>Let s do what the man says:</span></p>
 
 <p class=CODE><span lang=EN>&nbsp;</span></p>
 
-<p class=CODE><span lang=EN>dnvm install latest 'Ngen</span></p>
+<p class=CODE><span lang=EN>dnvm install latest  Ngen</span></p>
 
 <p class=CODE><span lang=EN>&nbsp;</span></p>
 
 <p class=MsoNormal><span lang=EN>&nbsp;</span></p>
 
-<p class=MsoNormal><span lang=EN>That didn't seem to do anything. That's not
+<p class=MsoNormal><span lang=EN>That didn t seem to do anything. That s not
 right. How about some help?</span></p>
 
 <p class=CODE><span lang=EN>&nbsp;</span></p>
@@ -136,22 +160,22 @@ right. How about some help?</span></p>
 
 <p class=MsoNormal><span lang=EN>&nbsp;</span></p>
 
-<span lang=EN style='font-size:11.0pt;font-family:"Calibri","sans-serif"'><br
-clear=all style='page-break-before:always'>
+<span lang=EN style= font-size:11.0pt;font-family:"Calibri","sans-serif" ><br
+clear=all style= page-break-before:always >
 </span>
 
-<p class=MsoNormal align=left style='margin-bottom:0cm;margin-bottom:.0001pt;
-text-align:left;line-height:normal'><span lang=EN>&nbsp;</span></p>
+<p class=MsoNormal align=left style= margin-bottom:0cm;margin-bottom:.0001pt;
+text-align:left;line-height:normal ><span lang=EN>&nbsp;</span></p>
 
 <p class=CODE><span lang=EN>dnvm install</span></p>
 
-<p class=CODE><span lang=EN>' Installs a version of the runtime</span></p>
+<p class=CODE><span lang=EN>  Installs a version of the runtime</span></p>
 
 <p class=CODE><span lang=EN>&nbsp;</span></p>
 
 <p class=CODE><span lang=EN>usage:</span></p>
 
-<p class=CODE><span lang=EN>' dnvm install [&lt;VersionNuPkgOrAlias&gt;] [-arch
+<p class=CODE><span lang=EN>  dnvm install [&lt;VersionNuPkgOrAlias&gt;] [-arch
 &lt;Architecture&gt;] [-r &lt;Runtime&gt;] [-a &lt;Alias&gt;] [-f] [-Proxy
 &lt;Proxy&gt;] [-NoNative] [-Ngen] [-Persis</span></p>
 
@@ -161,9 +185,9 @@ text-align:left;line-height:normal'><span lang=EN>&nbsp;</span></p>
 
 <p class=CODE><span lang=EN>options:</span></p>
 
-<p class=CODE><span lang=EN>' &lt;VersionNuPkgOrAlias&gt; The version to
-install from the current channel, the path to a '.nupkg' file to install,
-'latest' to</span></p>
+<p class=CODE><span lang=EN>  &lt;VersionNuPkgOrAlias&gt; The version to
+install from the current channel, the path to a  .nupkg  file to install,
+ latest  to</span></p>
 
 <p class=CODE><span lang=EN>install the latest available version from the
 current channel, or an alias value to install an alternate</span></p>
@@ -171,38 +195,38 @@ current channel, or an alias value to install an alternate</span></p>
 <p class=CODE><span lang=EN>runtime or architecture flavor of the specified
 alias.</span></p>
 
-<p class=CODE><span lang=EN>' -arch''''''''''''''' The processor architecture
+<p class=CODE><span lang=EN>  -arch                The processor architecture
 of the runtime to install (default: x86)</span></p>
 
-<p class=CODE><span lang=EN>' -r'''''''''''''''''' The runtime flavor to
+<p class=CODE><span lang=EN>  -r                   The runtime flavor to
 install (default: clr)</span></p>
 
-<p class=CODE><span lang=EN>' -a'''''''''''''''' ''Set alias &lt;Alias&gt; to
+<p class=CODE><span lang=EN>  -a                   Set alias &lt;Alias&gt; to
 the installed runtime</span></p>
 
-<p class=CODE><span lang=EN>' -f'''''''''''''''''' Overwrite an existing
+<p class=CODE><span lang=EN>  -f                   Overwrite an existing
 runtime if it already exists</span></p>
 
-<p class=CODE><span lang=EN>' -Proxy'''''''''''''' Use the given address as a
+<p class=CODE><span lang=EN>  -Proxy               Use the given address as a
 proxy when accessing remote server</span></p>
 
-<p class=CODE><span lang=EN>' -NoNative''''''''''' Skip generation of native
+<p class=CODE><span lang=EN>  -NoNative            Skip generation of native
 images</span></p>
 
-<p class=CODE><span lang=EN>' -Ngen''''''''''''''' For CLR flavor only.
+<p class=CODE><span lang=EN>  -Ngen                For CLR flavor only.
 Generate native images for runtime libraries on Desktop CLR to improve startup
 time. This option</span></p>
 
-<p class=CODE><span lang=EN>'requires elevated privilege and will be
+<p class=CODE><span lang=EN> requires elevated privilege and will be
 automatically turned on if the script is running in administrative mode. To
 opt-out in administrati</span></p>
 
 <p class=CODE><span lang=EN>ve mode, use -NoNative switch.</span></p>
 
-<p class=CODE><span lang=EN>' -Persistent''''''''' Make the installed runtime
+<p class=CODE><span lang=EN>  -Persistent          Make the installed runtime
 useable across all processes run by the current user</span></p>
 
-<p class=CODE><span lang=EN>' -Unstable''''''''''' Upgrade from our unstable
+<p class=CODE><span lang=EN>  -Unstable            Upgrade from our unstable
 dev feed. This will give you the latest development version of the runtime.</span></p>
 
 <p class=CODE><span lang=EN>&nbsp;</span></p>
@@ -211,26 +235,26 @@ dev feed. This will give you the latest development version of the runtime.</spa
 
 <p class=MsoNormal><span lang=EN>&nbsp;</span></p>
 
-<p class=MsoNormal><span lang=EN>That didn't really help.</span></p>
+<p class=MsoNormal><span lang=EN>That didn t really help.</span></p>
 
 <p class=MsoNormal><span lang=EN>How about this?</span></p>
 
 <p class=CODE><span lang=EN>&nbsp;</span></p>
 
-<p class=CODE><span lang=EN>dnvm 'Ngen</span></p>
+<p class=CODE><span lang=EN>dnvm  Ngen</span></p>
 
 <p class=CODE><span lang=EN>&nbsp;</span></p>
 
-<p class=CODE><span lang=EN>Unknown command: '-Ngen'</span></p>
+<p class=CODE><span lang=EN>Unknown command:  -Ngen </span></p>
 
 <p class=CODE><span lang=EN>&nbsp;</span></p>
 
 <p class=MsoNormal><span lang=EN>I guess I need to force a reinstall to get
-'Ngen to work</span></p>
+ Ngen to work</span></p>
 
 <p class=CODE><span lang=EN>&nbsp;</span></p>
 
-<p class=CODE><span lang=EN>dnvm' install latest -f 'Ngen</span></p>
+<p class=CODE><span lang=EN>dnvm  install latest -f  Ngen</span></p>
 
 <p class=CODE><span lang=EN>&nbsp;</span></p>
 
@@ -255,10 +279,10 @@ C:\Users\micheal\.dnx\runtimes\dnx-clr-win-x86.1.0.0-beta4\bin to process PATH</
 
 <p class=MsoNormal><span lang=EN>&nbsp;</span></p>
 
-<p class=MsoNormal><span lang=EN>Well, that didn't tell me anything new, so I
-have no idea if that worked.' Let's go on.</span></p>
+<p class=MsoNormal><span lang=EN>Well, that didn t tell me anything new, so I
+have no idea if that worked.  Let s go on.</span></p>
 
-<p class=MsoNormal><span lang=EN>So, Let's see where it put out dnx stuff.
+<p class=MsoNormal><span lang=EN>So, Let s see where it put out dnx stuff.
 Navigate to %userprofile%\.dnx\runtimes</span></p>
 
 <p class=MsoNormal><img border=0 width=432 height=342 id="Picture 79"
@@ -266,21 +290,21 @@ src="images/Getting%20Started%20with%20ASPNET5.0%20and%20the%20DNX%20Framework_f
 
 <p class=MsoNormal><span lang=EN>And have a look at the environment variables:</span></p>
 
-<p class=MsoNormal><span style='position:absolute;z-index:1;left:0px;
-margin-left:4px;margin-top:43px;width:323px;height:19px'><img width=323
+<p class=MsoNormal><span style= position:absolute;z-index:1;left:0px;
+margin-left:4px;margin-top:43px;width:323px;height:19px ><img width=323
 height=19
 src="images/Getting%20Started%20with%20ASPNET5.0%20and%20the%20DNX%20Framework_files/image009.gif"></span><img
 border=0 width=672 height=278 id="Picture 82"
 src="images/Getting%20Started%20with%20ASPNET5.0%20and%20the%20DNX%20Framework_files/image010.jpg"></p>
 
-<p class=MsoNormal><span lang=EN>Let's clone some stuff. Have I git installed
+<p class=MsoNormal><span lang=EN>Let s clone some stuff. Have I git installed
 yet?</span></p>
 
 <p class=CODE><span lang=EN>&nbsp;</span></p>
 
 <p class=CODE><span lang=EN>Z:\&gt;git</span></p>
 
-<p class=CODE><span lang=EN>'git' is not recognized as an internal or external
+<p class=CODE><span lang=EN> git  is not recognized as an internal or external
 command,</span></p>
 
 <p class=CODE><span lang=EN>operable program or batch file.</span></p>
@@ -289,15 +313,15 @@ command,</span></p>
 
 <p class=MsoNormal><span lang=EN>&nbsp;</span></p>
 
-<p class=MsoNormal><span lang=EN>Nope, let's get it. I don't like how cr/lf
+<p class=MsoNormal><span lang=EN>Nope, let s get it. I don t like how cr/lf
 gets messed up with scm build on windows so I prefer the github version</span></p>
 
-<p class=MsoNormal><span lang=EN>'<a href="https://windows.github.com/">https://windows.github.com/</a></span></p>
+<p class=MsoNormal><span lang=EN> <a href="https://windows.github.com/">https://windows.github.com/</a></span></p>
 
 <p class=MsoNormal><img border=0 width=672 height=337 id="Picture 85"
 src="images/Getting%20Started%20with%20ASPNET5.0%20and%20the%20DNX%20Framework_files/image011.jpg"></p>
 
-<p class=MsoNormal><span lang=EN>I don't remember this ever been so easy!</span></p>
+<p class=MsoNormal><span lang=EN>I don t remember this ever been so easy!</span></p>
 
 <p class=MsoNormal><img border=0 width=388 height=220 id="Picture 88"
 src="images/Getting%20Started%20with%20ASPNET5.0%20and%20the%20DNX%20Framework_files/image012.jpg"></p>
@@ -309,9 +333,9 @@ src="images/Getting%20Started%20with%20ASPNET5.0%20and%20the%20DNX%20Framework_f
 <p class=MsoNormal><img border=0 width=672 height=278 id="Picture 91"
 src="images/Getting%20Started%20with%20ASPNET5.0%20and%20the%20DNX%20Framework_files/image013.jpg"></p>
 
-<p class=MsoNormal><span lang=EN>That't better</span></p>
+<p class=MsoNormal><span lang=EN>That t better</span></p>
 
-<p class=MsoNormal><span lang=EN>Let's clone the ASPNET </span></p>
+<p class=MsoNormal><span lang=EN>Let s clone the ASPNET </span></p>
 
 <p class=CODE><span lang=EN>D:\Developer&gt;mkdir aspnet</span></p>
 
@@ -320,12 +344,12 @@ src="images/Getting%20Started%20with%20ASPNET5.0%20and%20the%20DNX%20Framework_f
 <p class=CODE><span lang=EN>D:\Developer\aspnet&gt;git clone
 https://github.com/aspnet/Home.git</span></p>
 
-<p class=CODE><span lang=EN>Cloning into 'Home'...</span></p>
+<p class=CODE><span lang=EN>Cloning into  Home ...</span></p>
 
 <p class=CODE><span lang=EN>remote: Counting objects: 1150, done.</span></p>
 
 <p class=CODE><span lang=EN>Receiving objects: 100% (1150/1150), 628.01 KiB |
-413.00 KiB/s'' 0</span></p>
+413.00 KiB/s   0</span></p>
 
 <p class=CODE><span lang=EN>Receiving objects: 100% (1150/1150), 702.31 KiB |
 413.00 KiB/s, done.</span></p>
@@ -355,14 +379,14 @@ restore</span></p>
 <p class=CODE><span lang=EN>Restoring packages for
 D:\Developer\aspnet\Home\samples\latest\ConsoleApp\project.json</span></p>
 
-<p class=CODE><span lang=EN>' GET
-https://www.myget.org/F/aspnetvnext/api/v2/FindPackagesById()?Id='System.Console'.</span></p>
+<p class=CODE><span lang=EN>  GET
+https://www.myget.org/F/aspnetvnext/api/v2/FindPackagesById()?Id= System.Console .</span></p>
 
-<p class=CODE><span lang=EN>' GET
-https://nuget.org/api/v2/FindPackagesById()?Id='System.Console'.</span></p>
+<p class=CODE><span lang=EN>  GET
+https://nuget.org/api/v2/FindPackagesById()?Id= System.Console .</span></p>
 
-<p class=CODE><span lang=EN>''OK
-https://nuget.org/api/v2/FindPackagesById()?Id='System.Console' 2192ms</span></p>
+<p class=CODE><span lang=EN>  OK
+https://nuget.org/api/v2/FindPackagesById()?Id= System.Console  2192ms</span></p>
 
 <p class=CODE><span lang=EN>&nbsp;</span></p>
 
@@ -375,7 +399,7 @@ https://nuget.org/api/v2/FindPackagesById()?Id='System.Console' 2192ms</span></p
 <p class=MsoNormal><span lang=EN>Now we have dnx</span></p>
 
 <p class=CODE><span lang=EN>D:\Developer\aspnet\Home\samples\<span
-style='background:red'>latest</span>\ConsoleApp&gt;dnx</span></p>
+style= background:red >latest</span>\ConsoleApp&gt;dnx</span></p>
 
 <p class=CODE><span lang=EN>Microsoft .NET Execution environment
 v1.0.0-beta4-11566</span></p>
@@ -388,38 +412,38 @@ v1.0.0-beta4-11566</span></p>
 
 <p class=CODE><span lang=EN>Options:</span></p>
 
-<p class=CODE><span lang=EN>' --appbase &lt;PATH&gt;''''''''''''''''
+<p class=CODE><span lang=EN>  --appbase &lt;PATH&gt;                
 Application base directory path</span></p>
 
-<p class=CODE><span lang=EN>' --lib &lt;LIB_PATHS&gt;''''''''''''''' Paths used
+<p class=CODE><span lang=EN>  --lib &lt;LIB_PATHS&gt;                Paths used
 for library look-up</span></p>
 
-<p class=CODE><span lang=EN>' --debug''''''''''''''''''''''''' Waits for the
+<p class=CODE><span lang=EN>  --debug                          Waits for the
 debugger to attach before beginning execution.</span></p>
 
-<p class=CODE><span lang=EN>' -?|-h|--help'''''''''''''''''''' Show help information</span></p>
+<p class=CODE><span lang=EN>  -?|-h|--help                     Show help information</span></p>
 
-<p class=CODE><span lang=EN>' --version''''''''''''''''''''''' Show version
+<p class=CODE><span lang=EN>  --version                        Show version
 information</span></p>
 
-<p class=CODE><span lang=EN>' --watch''''''''''''''''''''''''' Watch file
+<p class=CODE><span lang=EN>  --watch                          Watch file
 changes</span></p>
 
-<p class=CODE><span lang=EN>' --packages &lt;PACKAGE_DIR&gt;'''''''' Directory
+<p class=CODE><span lang=EN>  --packages &lt;PACKAGE_DIR&gt;         Directory
 containing packages</span></p>
 
-<p class=CODE><span lang=EN>' --configuration &lt;CONFIGURATION&gt;' The
+<p class=CODE><span lang=EN>  --configuration &lt;CONFIGURATION&gt;  The
 configuration to run under</span></p>
 
-<p class=CODE><span lang=EN>' --port &lt;PORT&gt;''''''''''''''''''' The port
+<p class=CODE><span lang=EN>  --port &lt;PORT&gt;                    The port
 to the compilation server</span></p>
 
 <p class=MsoNormal><span lang=EN>&nbsp;</span></p>
 
-<p class=MsoNormal><span lang=EN style='background:yellow'>Something I didn't
+<p class=MsoNormal><span lang=EN style= background:yellow >Something I didn t
 get. You have to run dnvm install each time to set the path.</span></p>
 
-<p class=MsoNormal><span lang=EN>Let's run it.</span></p>
+<p class=MsoNormal><span lang=EN>Let s run it.</span></p>
 
 <p class=CODE><span lang=EN>&nbsp;</span></p>
 
@@ -428,7 +452,7 @@ latest</span></p>
 
 <p class=CODE><span lang=EN>Determining latest version</span></p>
 
-<p class=CODE><span lang=EN>'dnx-clr-win-x86.1.0.0-beta4' is already installed.</span></p>
+<p class=CODE><span lang=EN> dnx-clr-win-x86.1.0.0-beta4  is already installed.</span></p>
 
 <p class=CODE><span lang=EN>Adding
 C:\Users\micheal\.dnx\runtimes\dnx-clr-win-x86.1.0.0-beta4\bin to process PATH</span></p>
@@ -437,7 +461,7 @@ C:\Users\micheal\.dnx\runtimes\dnx-clr-win-x86.1.0.0-beta4\bin to process PATH</
 
 <p class=MsoNormal><span lang=EN>&nbsp;</span></p>
 
-<p class=MsoNormal><span lang=EN>Now,' navigate to, and run the console app.</span></p>
+<p class=MsoNormal><span lang=EN>Now,  navigate to, and run the console app.</span></p>
 
 <p class=CODE><span lang=EN>&nbsp;</span></p>
 
@@ -457,31 +481,31 @@ latest\ConsoleApp</span></p>
 
 <p class=MsoNormal><span lang=EN>Sweet jesus, it ran!</span></p>
 
-<p class=MsoNormal><span lang=EN>'Let's try the web Sample:</span></p>
+<p class=MsoNormal><span lang=EN> Let s try the web Sample:</span></p>
 
 <p class=CODE><span lang=EN>&nbsp;</span></p>
 
-<p class=CODE align=left style='text-align:left'><span lang=EN>D:\Developer\aspnet\Home\samples\latest\ConsoleApp&gt;cd
+<p class=CODE align=left style= text-align:left ><span lang=EN>D:\Developer\aspnet\Home\samples\latest\ConsoleApp&gt;cd
 ..\HelloWeb</span></p>
 
-<p class=CODE align=left style='text-align:left'><span lang=EN>&nbsp;</span></p>
+<p class=CODE align=left style= text-align:left ><span lang=EN>&nbsp;</span></p>
 
-<p class=CODE align=left style='text-align:left'><span lang=EN>D:\Developer\aspnet\Home\samples\latest\HelloWeb&gt;dnx
+<p class=CODE align=left style= text-align:left ><span lang=EN>D:\Developer\aspnet\Home\samples\latest\HelloWeb&gt;dnx
 . web</span></p>
 
-<p class=CODE align=left style='text-align:left'><span lang=EN>System.InvalidOperationException:
-No service for type 'Microsoft.Framework.Runtime.IApplicationEnvironment' has
+<p class=CODE align=left style= text-align:left ><span lang=EN>System.InvalidOperationException:
+No service for type  Microsoft.Framework.Runtime.IApplicationEnvironment  has
 been registered.</span></p>
 
-<p class=CODE align=left style='text-align:left'><span lang=EN>'' at
+<p class=CODE align=left style= text-align:left ><span lang=EN>   at
 Microsoft.Framework.DependencyInjection.ServiceProviderExtensions.GetRequiredService(IServiceProvider
 provider, Type serviceType)</span></p>
 
-<p class=CODE align=left style='text-align:left'><span lang=EN>'' at
+<p class=CODE align=left style= text-align:left ><span lang=EN>   at
 Microsoft.Framework.DependencyInjection.ServiceProviderExtensions.GetRequiredService[T](IServiceProvider
 provider)</span></p>
 
-<p class=CODE align=left style='text-align:left'><span lang=EN>'' at
+<p class=CODE align=left style= text-align:left ><span lang=EN>   at
 Microsoft.AspNet.Hosting.Program.Main(String[] args)</span></p>
 
 <p class=CODE><span lang=EN>&nbsp;</span></p>
@@ -491,11 +515,11 @@ Microsoft.AspNet.Hosting.Program.Main(String[] args)</span></p>
 <p class=MsoNormal><span lang=EN>Not sure what this is about. I though I
 installed latest? I googled it on bing, and found this:</span></p>
 
-<p class=MsoNormal align=left style='margin-bottom:12.0pt;text-align:left;
-line-height:normal;background:white'><span style='font-size:10.5pt;font-family:
-"Helvetica","sans-serif";color:#222222'>http://stackoverflow.com/questions/30013929/service-missing-for-type-microsoft-framework-runtime-iapplicationenvironment</span></p>
+<p class=MsoNormal align=left style= margin-bottom:12.0pt;text-align:left;
+line-height:normal;background:white ><span style= font-size:10.5pt;font-family:
+"Helvetica","sans-serif";color:#222222 >http://stackoverflow.com/questions/30013929/service-missing-for-type-microsoft-framework-runtime-iapplicationenvironment</span></p>
 
-<p class=CODE align=left style='margin-left:72.0pt;text-align:left'>I had a
+<p class=CODE align=left style= margin-left:72.0pt;text-align:left >I had a
 similar issue when trying to run from the \samples\latest folder instead of
 \samples\1.0.0-beta4 folder. Simply trying again from where I was supposed to
 be worked.</p>
@@ -506,7 +530,7 @@ be worked.</p>
 I have above. Change to the beta4 path and run</span></p>
 
 <p class=CODE><span lang=EN>D:\Developer\aspnet\Home\samples\<span
-style='background:red'>1.0.0-beta4</span>\HelloWeb&gt;dnx . web</span></p>
+style= background:red >1.0.0-beta4</span>\HelloWeb&gt;dnx . web</span></p>
 
 <p class=CODE><span lang=EN>Started</span></p>
 
@@ -535,7 +559,7 @@ src="images/Getting%20Started%20with%20ASPNET5.0%20and%20the%20DNX%20Framework_f
 
 <p class=MsoNormal><span lang=EN>&nbsp;</span></p>
 
-<p class=MsoNormal><span lang=EN>And, what do you know? My Android SDK's are
+<p class=MsoNormal><span lang=EN>And, what do you know? My Android SDK s are
 just finished. Brilliant.</span></p>
 
 <p class=MsoNormal><span lang=EN>&nbsp;</span></p>
