@@ -14,15 +14,15 @@ I remember attending a seminar on the release of Windows Server 2012 R2 a few ye
 
 I installed the Role under File and Storage Services > File and iSCSI Services > Data Deduplication. Done in a few seconds? Is that it?
 
-![Installing the Data Deduplication feature]( http://(http://colhountech.github.io/images/Data%20Deduplication%20%20Feature.PNG )
+![Installing the Data Deduplication feature](http://(http://colhountech.github.io/images/Data%20Deduplication%20%20Feature.PNG )
 
 It took a quick google on bind, and then all that is left is to navigate to the Server Manager > File and Storage Services > Volumes, Right-Click and select **Configure Data Deduplication**. I set the schedule to be quite agressive and to update twice per day, but I didn't even notice any performance impact to be honest. I took a before and after screen shot of the disk usage.
 
-![Before]( http://(http://colhountech.github.io/images/Data%20Deduplication%20%20Before.PNG)
+![Before](http://(http://colhountech.github.io/images/Data%20Deduplication%20%20Before.PNG)
 
 Next morning I was pleasantly surprised to see the 102GB free space had increased to over 550 GB, giving me a whopping DeDuplication rate of 23%.  Happy Days!
 
-![After]( http://(http://colhountech.github.io/images/Data%20Deduplication%20After.PNG)
+![After](http://(http://colhountech.github.io/images/Data%20Deduplication%20After.PNG)
 
 What I love about features such as this, is that they are so easy to setup and configure. 
 
