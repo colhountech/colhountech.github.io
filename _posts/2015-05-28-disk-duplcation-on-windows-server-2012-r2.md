@@ -1,7 +1,7 @@
 ---
 title: Data Deduplication on Windows Server 2012 R2 Rocks!
 layout: post
-published: false
+published: true
 ---
 
 I'm a bit of a stickler for backups, and just to be sure, I usually setup my traditional hard drives as Raid-1 mirrors. It's twice the cost but it just gives me that little bit more reassurance. Besides, who really wants to spend half a day rebuilding a server and mucking about with restoring backups?
