@@ -113,42 +113,22 @@ install. Let's go with latest stable version of dnx.</p>
 
 <p class=CODE>&nbsp;</p>
 
-<p class=CODE>&nbsp;</p>
-
-  
-
-  
 
 <p class=MsoNormal>That's better. We are off to the races'</p>
 
 <p class=MsoNormal><img border=0 width=669 height=275 id="Picture 67"
   src="/images/Getting%20Started%20with%20ASPNET5.0%20and%20the%20DNX%20Framework_files/image006.jpg"></p>
 
-<p class=MsoNormal>Now we are done.</p>
+<p class=MsoNormal>Now we are done. Lets' get some help on dnvm</p>
 
 <p class=MsoNormal><img border=0 width=672 height=278 id="Picture 76"
   src="/images/Getting%20Started%20with%20ASPNET5.0%20and%20the%20DNX%20Framework_files/image007.jpg"></p>
-
-<p class=MsoNormal>Let's do what the man says:</p>
-
-<p class=CODE>&nbsp;</p>
-
-<p class=CODE>dnvm install latest -Ngen</p>
-
-<p class=CODE>&nbsp;</p>
-
-  
-
-<p class=MsoNormal>That didn't seem to do anything. That's not right. How about
-some help?</p>
 
 <p class=CODE>&nbsp;</p>
 
 <p class=CODE>dnvm help install</p>
 
 <p class=CODE>&nbsp;</p>
-
-  
 
 <span style='font-size:11.0pt;font-family:"Calibri","sans-serif"'><br
 clear=all style='page-break-before:always'>
@@ -205,9 +185,7 @@ images for runtime libraries on Desktop CLR to improve startup time. This
 option</p>
 
 <p class=CODE>'requires elevated privilege and will be automatically turned on
-if the script is running in administrative mode. To opt-out in administrati</p>
-
-<p class=CODE>ve mode, use -NoNative switch.</p>
+if the script is running in administrative mode. To opt-out in administrative mode, use -NoNative switch.</p>
 
 <p class=CODE>' -Persistent          Make the installed runtime useable across
 all processes run by the current user</p>
@@ -217,54 +195,7 @@ will give you the latest development version of the runtime.</p>
 
 <p class=CODE>&nbsp;</p>
 
-<p class=CODE>remarks:</p>
-
-  
-
-<p class=MsoNormal>That didn't really help.</p>
-
-<p class=MsoNormal>How about this?</p>
-
-<p class=CODE>&nbsp;</p>
-
-<p class=CODE>dnvm -Ngen</p>
-
-<p class=CODE>&nbsp;</p>
-
-<p class=CODE>Unknown command: '-Ngen'</p>
-
-<p class=CODE>&nbsp;</p>
-
-<p class=MsoNormal>I guess I need to force a reinstall to get -Ngen to work</p>
-
-<p class=CODE>&nbsp;</p>
-
-<p class=CODE>dnvm' install latest -f -Ngen</p>
-
-<p class=CODE>&nbsp;</p>
-
-<p class=CODE>&nbsp;</p>
-
-<p class=CODE>Determining latest version</p>
-
-<p class=CODE>Cleaning existing installation...</p>
-
-<p class=CODE>Downloading dnx-clr-win-x86.1.0.0-beta4 from
-https://www.nuget.org/api/v2</p>
-
-<p class=CODE>Installing to C:\Users\micheal\.dnx\runtimes\dnx-clr-win-x86.1.0.0-beta4</p>
-
-<p class=CODE>Adding
-C:\Users\micheal\.dnx\runtimes\dnx-clr-win-x86.1.0.0-beta4\bin to process PATH</p>
-
-<p class=CODE>&nbsp;</p>
-
-<p class=CODE>&nbsp;</p>
-
-  
-
-<p class=MsoNormal>Well, that didn't tell me anything new, so I have no idea if
-that worked. Let's go on.</p>
+<p class=CODE>remarks:  A proxy can also be specified by using the 'http_proxy' environment variable</p>
 
 <p class=MsoNormal>So, Let's see where it put out dnx stuff. Navigate to %userprofile%\.dnx\runtimes</p>
 
@@ -290,9 +221,7 @@ border=0 width=672 height=278 id="Picture 82"
 <p class=CODE>&nbsp;</p>
 
   
-
-<p class=MsoNormal>Nope, let's get it. I don't like how cr/lf gets messed up
-with scm build on windows so I prefer the github version</p>
+<p class=MsoNormal>Nope, let's get it </p> 
 
 <p class=MsoNormal>'<a href="https://windows.github.com/">https://windows.github.com/</a></p>
 
@@ -306,7 +235,6 @@ with scm build on windows so I prefer the github version</p>
 
 <p class=MsoNormal>Start a Git Shell from the desktop. </p>
 
-  
 
 <p class=MsoNormal><img border=0 width=672 height=278 id="Picture 91"
   src="/images/Getting%20Started%20with%20ASPNET5.0%20and%20the%20DNX%20Framework_files/image013.jpg"></p>
@@ -410,27 +338,28 @@ under</p>
 <p class=CODE>' --port &lt;PORT&gt;   '            The port to the
 compilation server</p>
 
-  
 
 <p class=MsoNormal><span style='background:yellow'>Something I didn't get. You
-have to run dnvm install each time to set the path.</span></p>
+have to run dnvm upgrade to set the path.</span></p>
 
 <p class=MsoNormal>Let's run it.</p>
 
 <p class=CODE>&nbsp;</p>
 
-<p class=CODE>D:\Developer\aspnet\Home\samples&gt;dnvm install latest</p>
+<p class=CODE>D:\Developer\aspnet\Home\samples&gt;dnvm upgrade latest</p>
 
 <p class=CODE>Determining latest version</p>
 
-<p class=CODE>'dnx-clr-win-x86.1.0.0-beta4' is already installed.</p>
+<p class=CODE>'dnx-clr-win-x86.1.0.0-beta4' is already installed. </p>
 
-<p class=CODE>Adding
-C:\Users\micheal\.dnx\runtimes\dnx-clr-win-x86.1.0.0-beta4\bin to process PATH</p>
+<p class=CODE>Adding C:\Users\Micheal\.dnx\runtimes\dnx-clr-win-x86.1.0.0-beta4\bin to process PATH</p>
+
+<p class=CODE>Adding C:\Users\Micheal\.dnx\runtimes\dnx-clr-win-x86.1.0.0-beta4\bin to user PATH</p>
+
+<p class=CODE>Updating alias 'latest' to 'dnx-clr-win-x86.1.0.0-beta4'</p>
 
 <p class=CODE>&nbsp;</p>
 
-  
 
 <p class=MsoNormal>Now, navigate to, and run the console app.</p>
 
@@ -477,7 +406,6 @@ Microsoft.AspNet.Hosting.Program.Main(String[] args)</p>
 
 <p class=CODE>&nbsp;</p>
 
-  
 
 <p class=MsoNormal>Not sure what this is about. I though I installed latest? I
 googled it on bing, and found this:
@@ -531,12 +459,9 @@ web</p>
 Brilliant.</p>
 
   
-
-  
-
-  
-
-  
+<p class=MsoNormal>P.S. I have since found out that if you upgrade to the unstable branch (-u), that running the 
+above HelloWeb and HelloMVC in the [latest] folder works just fine.  More about this in another post.
+</p>
 
 </div>
 
