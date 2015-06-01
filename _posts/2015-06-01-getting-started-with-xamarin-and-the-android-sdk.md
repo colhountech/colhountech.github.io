@@ -54,7 +54,7 @@ about. So, to recap:
 
 
 	minSDKversion=16	
- 	targetSDKversion=22
+	targetSDKversion=22
 
 ## CPU and Emulation
 
