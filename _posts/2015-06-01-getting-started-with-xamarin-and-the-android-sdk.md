@@ -52,11 +52,9 @@ target platform newer than this, but the OS will not make any
 assumptions about newer features of the OS that your app doesn't know
 about. So, to recap:
 
-<code>
-	minSDKversion=16
-	
+
+	minSDKversion=16	
  	targetSDKversion=22
-</code>
 
 ## CPU and Emulation
 
