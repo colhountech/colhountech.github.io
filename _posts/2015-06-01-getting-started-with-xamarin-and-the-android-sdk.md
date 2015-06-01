@@ -1,8 +1,8 @@
---
+---
 title: Getting Started with Xamarin Studio and the Android SDK
 layout: post
 published: true
---
+---
 Let's face it. Xamarin is a pretty amazing company when you look at it. The father of Xamarin, Miguel de Icaza had a vision when he saw the first release of Microsoft .Net and the C# language. He said, ( and I'm paraphrasing) -  "this is an amazing technology and it needs to go open source and cross-platform so the whole world can benefit". Well, maybe he didn't actually day "cross-platform" *per se*, but certainly words to that effect.
 
 One of the real stumbling blocks in moving from being a pure Windows developer to a Cross-Platform dev is understanding the Android SDK. When I first came across Xamarin Forms, I thought to myself, I wonder how far I can get without having to delve into masses of Android documentation and Hacker resources.
