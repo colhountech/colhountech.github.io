@@ -20,13 +20,9 @@ Here is the c# code:
         static void Main(string[] args)
         {
             long candidate = 1024 * 1024 * 1024 + 3;
-
             Stopwatch watch = Stopwatch.StartNew();
-
             long startAt = 2;
-
             bool isPrime = true;
-
             for (long i = startAt; i < candidate; i++)
             {
                 if (candidate % i == 0)
@@ -55,13 +51,9 @@ Our new algorhtim:
         static void Main(string[] args)
         {
             long candidate = 1024 * 1024 * 1024 + 3;
-
             Stopwatch watch = Stopwatch.StartNew();
-
             long startAt = 2;
-
             bool isPrime = true;
-
             for (long i = startAt; i < Math.Sqrt(candidate); i++)
             {
                 if (candidate % i == 0)
@@ -107,7 +99,6 @@ Here is the code to calculate the sqrt.
           public static BigInteger Sqrt(this BigInteger n)
             {
                 if (n == 0) return 0;
-        
                 if (n < long.MaxValue)
                 {
                     return  (BigInteger) Math.Sqrt((long)n);
@@ -116,7 +107,6 @@ Here is the code to calculate the sqrt.
                 {
                     int bitLength = Convert.ToInt32(Math.Ceiling(BigInteger.Log(n, 2)));
                     BigInteger root = BigInteger.One << (bitLength / 2);
-        
                     while (!isSqrt(n, root))
                     {
                         root += n / root;
@@ -149,7 +139,6 @@ and I have moved the prime search to this extensions method:
                     }
                 }
                 return true;
-        
             }
 
 Ouch! not good. 
