@@ -17,7 +17,8 @@ Here is probably the simplest approach to implementing this in code, and is the 
 
 Here is the c# code:
 
-<code>
+```language c#
+
         static void Main(string[] args)
         {
             long candidate = 1024 * 1024 * 1024 + 3;
@@ -43,7 +44,7 @@ Here is the c# code:
             Console.WriteLine("Time Taken = {0:n} msec", watch.ElapsedMilliseconds);
         }
 		
-</code>
+```
               	
 You should get the following output:
 
@@ -54,7 +55,8 @@ Let's optomise our algorithm. A non-prime number p, can always be refactored to 
 
 Our new algorhtim:
 
-<code>
+```language c#
+
         static void Main(string[] args)
         {
             long candidate = 1024 * 1024 * 1024 + 3;
@@ -80,7 +82,8 @@ Our new algorhtim:
             Console.WriteLine("Time Taken = {0:n} msec", watch.ElapsedMilliseconds);
         }
 			
-</code>
+```
+
 You should get the following output:
 
 	Found a new prime: 1073741827
@@ -108,7 +111,7 @@ There are a few new concepts here. Firstly, there is no Math.Sqrt() for BigInteg
 
 Here is the code to calculate the sqrt.
 
-<code>
+```language c#
 
           public static BigInteger Sqrt(this BigInteger n)
             {
@@ -142,11 +145,13 @@ Here is the code to calculate the sqrt.
         
                 return (n >= lowerBound && n < upperBound);
             }
-</code>
+
+```
 
 and I have moved the prime search to this extensions method:
 
-<code>
+```language c#
+
         public static bool IsPrime(this BigInteger candidate)
             {
                 for (BigInteger i = 2; i < candidate; i++)
@@ -159,7 +164,8 @@ and I have moved the prime search to this extensions method:
                 return true;
         
             }
-</code>
+```
+
 Ouch! not good. 
 
         Found a new prime: 9,223,372,036,854,775,783
