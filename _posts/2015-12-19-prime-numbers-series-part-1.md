@@ -15,9 +15,9 @@ So, what are the rules for finding prime numbers:
 
 Here is probably the simplest approach to implementing this in code, and is the same approach used to prove many hypothesis. We assume the number is a prime, and scan throught all cases, apply the rule to each case if the rule fails we mark the candidate as being not a prime number. If the hypothesis passes all rules at the end, we have found a prime.
 
-Here is the code:
+Here is the c# code:
 
-
+<code>
         static void Main(string[] args)
         {
             long candidate = 1024 * 1024 * 1024 + 3;
@@ -42,7 +42,9 @@ Here is the code:
             }
             Console.WriteLine("Time Taken = {0:n} msec", watch.ElapsedMilliseconds);
         }
-			
+		
+</code>
+              	
 You should get the following output:
 
 	Found a new prime: 1073741827
@@ -52,6 +54,7 @@ Let's optomise our algorithm. A non-prime number p, can always be refactored to 
 
 Our new algorhtim:
 
+<code>
         static void Main(string[] args)
         {
             long candidate = 1024 * 1024 * 1024 + 3;
@@ -77,6 +80,7 @@ Our new algorhtim:
             Console.WriteLine("Time Taken = {0:n} msec", watch.ElapsedMilliseconds);
         }
 			
+</code>
 You should get the following output:
 
 	Found a new prime: 1073741827
@@ -84,15 +88,14 @@ You should get the following output:
 	
 Wow. That's fast. 
 
-Let's try a bigger prime: how about long.MAXVALUE = 24, or 9,223,372,036,854,775,783
+Let's try a bigger prime: how about long.MAXVALUE - 24, or 9,223,372,036,854,775,783
 
 Found a new prime: 9,223,372,036,854,775,783
 Time Taken = 146493 msec to scan 9,223,372,036,854,775,783
 
-
 We are starting to hit more limits now.
 
-Firstly, the time taken is getting long again. Over two minutes, but if you look at our CPU usage, it's stuck solid on 50% cpu utilisation. Since we are running a single linear thread of execution in our candidate search, we are not making full use of the processor cores in our computer. Maybe we should consider running our search in parallel over several threads of execution. We will look at this shortly.
+Firstly, the time taken is getting long again. Over two minutes, but if you look at our CPU usage, it's stuck solid on 50% cpu utilisation. Since we are running a single linear thread of execution in our candidate search, we are not making full use of the processor cores in the computer. Maybe we should consider running our search in parallel over several threads of execution. We will look at this in a later post.
 
  Secondly, our "long" variable can't hold a number larger than MAXVALUE so 9223372036854775783 is the largest prime we can search for.
 
@@ -105,6 +108,7 @@ There are a few new concepts here. Firstly, there is no Math.Sqrt() for BigInteg
 
 Here is the code to calculate the sqrt.
 
+<code>
 
           public static BigInteger Sqrt(this BigInteger n)
             {
@@ -138,9 +142,11 @@ Here is the code to calculate the sqrt.
         
                 return (n >= lowerBound && n < upperBound);
             }
+</code>
 
 and I have moved the prime search to this extensions method:
 
+<code>
         public static bool IsPrime(this BigInteger candidate)
             {
                 for (BigInteger i = 2; i < candidate; i++)
@@ -153,7 +159,7 @@ and I have moved the prime search to this extensions method:
                 return true;
         
             }
-
+</code>
 Ouch! not good. 
 
         Found a new prime: 9,223,372,036,854,775,783
