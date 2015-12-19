@@ -17,7 +17,7 @@ Here is probably the simplest approach to implementing this in code, and is the 
 
 Here is the c# code:
 
-```language c#
+```
 
         static void Main(string[] args)
         {
@@ -55,7 +55,7 @@ Let's optomise our algorithm. A non-prime number p, can always be refactored to 
 
 Our new algorhtim:
 
-```language c#
+```
 
         static void Main(string[] args)
         {
@@ -111,7 +111,7 @@ There are a few new concepts here. Firstly, there is no Math.Sqrt() for BigInteg
 
 Here is the code to calculate the sqrt.
 
-```language c#
+```
 
           public static BigInteger Sqrt(this BigInteger n)
             {
@@ -150,7 +150,7 @@ Here is the code to calculate the sqrt.
 
 and I have moved the prime search to this extensions method:
 
-```language c#
+```
 
         public static bool IsPrime(this BigInteger candidate)
             {
