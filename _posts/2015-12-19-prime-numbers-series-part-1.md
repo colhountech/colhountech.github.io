@@ -17,8 +17,6 @@ Here is probably the simplest approach to implementing this in code, and is the 
 
 Here is the c# code:
 
-```
-
         static void Main(string[] args)
         {
             long candidate = 1024 * 1024 * 1024 + 3;
@@ -44,7 +42,6 @@ Here is the c# code:
             Console.WriteLine("Time Taken = {0:n} msec", watch.ElapsedMilliseconds);
         }
 		
-```
               	
 You should get the following output:
 
@@ -54,8 +51,6 @@ You should get the following output:
 Let's optomise our algorithm. A non-prime number p, can always be refactored to n x m. But if sqrt(p) = n x n, so one of these must be  less than sqrt(p) or (n x m) would be greather than or equal to p, so we only need to check  for all values less than sqrt (p).
 
 Our new algorhtim:
-
-```
 
         static void Main(string[] args)
         {
@@ -82,8 +77,6 @@ Our new algorhtim:
             Console.WriteLine("Time Taken = {0:n} msec", watch.ElapsedMilliseconds);
         }
 			
-```
-
 You should get the following output:
 
 	Found a new prime: 1073741827
@@ -110,8 +103,6 @@ so that we can benchmark the difference between a long seach and a BigInteger se
 There are a few new concepts here. Firstly, there is no Math.Sqrt() for BigInteger, so we had to roll our own. Here is a sample on getting the Sqrt of a BigInteger. I have implemented this as an extension method. This is derived from the following slackover post with a few optonisiations.
 
 Here is the code to calculate the sqrt.
-
-```
 
           public static BigInteger Sqrt(this BigInteger n)
             {
@@ -146,11 +137,7 @@ Here is the code to calculate the sqrt.
                 return (n >= lowerBound && n < upperBound);
             }
 
-```
-
 and I have moved the prime search to this extensions method:
-
-```
 
         public static bool IsPrime(this BigInteger candidate)
             {
@@ -164,7 +151,6 @@ and I have moved the prime search to this extensions method:
                 return true;
         
             }
-```
 
 Ouch! not good. 
 
@@ -180,5 +166,3 @@ This is approx 8 times slower than the previous calculation, but gives us a much
 Our next optomisation: We actualy don't need to check every number, because if the number we are about to check is not a prime, it would already have been identified by one of it's divisors, so we actually only need to check that it can be divided by a lower prime number. So, a new algorithm would be to have a array of every number between 2 and our candidate, and flag this number as true if it's a prime, or false if it's not a prime, and as we build up each candidate, we can first check if this number exists in our array first. Let's see what happens if we try this.
 
 Now, we quickly run out of memory if we do this, so what we can do is provide a service that caches the previous primes that we have persistned to storage, so that we don't have out of memory issues. That's our next step.
-
-
