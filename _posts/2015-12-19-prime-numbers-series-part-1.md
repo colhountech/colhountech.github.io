@@ -130,7 +130,8 @@ and I have moved the prime search to this extensions method:
 
         public static bool IsPrime(this BigInteger candidate)
             {
-                for (BigInteger i = 2; i < candidate; i++)
+                BigInteger sqrt = candidate.Sqrt();
+                for (BigInteger i = 2; i < sqrt; i++)
                 {
                     if (candidate % i == 0)
                     {
