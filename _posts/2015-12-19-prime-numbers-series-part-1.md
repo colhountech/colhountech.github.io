@@ -147,10 +147,13 @@ Ouch! not good.
         Time Taken = 1,145,536 msec to scan 9,223,372,036,854,775,783
 
 This is approx 8 times slower than the previous calculation, but gives us a much bigger range. I've run off the first 3 primes starting with (long.MAX_VALUE - 24);
-
+        
         Found a new prime: 9,223,372,036,854,775,783. Time Taken = 1,690,790 msec
         Found a new prime: 9,223,372,036,854,775,837. Time Taken = 1,550,355 msec
         Found a new prime: 9,223,372,036,854,775,907. Time Taken = 1,884,315 msec
+        Found a new prime: 9,223,372,036,854,775,931. Time Taken = 1,599,943 msec
+        Found a new prime: 9,223,372,036,854,775,939. Time Taken = 1,718,325 msec
+        Found a new prime: 9,223,372,036,854,775,963. Time Taken = 1,580,920 msec
 
 Our next optimisation: We actually don't need to check every number, because if the number we are about to check is not a prime, it would already have been identified by one of it's divisors, so we actually only need to check that it can be divided by a lower prime number. So, a new algorithm would be to have a array of every number between 2 and our candidate, and flag this number as true if it's a prime, or false if it's not a prime, and as we build up each candidate, we can first check if this number exists in our array first. Let's see what happens if we try this.
 
