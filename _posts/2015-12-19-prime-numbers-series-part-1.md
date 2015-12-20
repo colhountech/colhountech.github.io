@@ -4,16 +4,16 @@ layout: post
 published: true
 ---
 
-This is part 1 of a series of posts on writig scalable software in c# and dotnet.
+This is part 1 of a series of posts on writing scalable software.
 
-# Start at the Begining.
+# Start at the Beginning.
 
 So, what are the rules for finding prime numbers:
 
-* rule 1: the number is greater than 1
-* rule 2: the number is only divisable by 1 and itself.
+* Rule 1: the number is greater than 1
+* Rule 2: the number is only divisible by 1 and itself.
 
-Here is probably the simplest approach to implementing this in code, and is the same approach used to prove many hypothesis. We assume the number is a prime, and scan throught all cases, apply the rule to each case if the rule fails we mark the candidate as being not a prime number. If the hypothesis passes all rules at the end, we have found a prime.
+Here is probably the simplest approach to implementing this in code, and is the same approach used to prove many hypotheses. We assume the number is a prime, and scan through all cases, apply the rule to each case if the rule fails we mark the candidate as being not a prime number. If the hypothesis passes all rules at the end, we have found a prime.
 
 Here is the c# code:
 
@@ -44,9 +44,9 @@ You should get the following output:
 	Found a new prime: 1073741827
 	Time Taken = 16,916.00 msec
 
-Let's optomise our algorithm. A non-prime number p, can always be refactored to n x m. But if sqrt(p) = n x n, so one of these must be  less than sqrt(p) or (n x m) would be greather than or equal to p, so we only need to check  for all values less than sqrt (p).
+Let's optimise our algorithm slightly. A non-prime number p, can always be refactored to n x m. But if sqrt(p) = n x n, so one of these must be  less than sqrt(p) or (n x m) would be greater than or equal to p, so we only need to check  for all values less than sqrt (p).
 
-Our new algorhtim:
+Our new algorithm:
 
         static void Main(string[] args)
         {
@@ -90,11 +90,10 @@ Firstly, the time taken is getting long again. Over two minutes, but if you look
 Let's see if we can look for bigger number. I came across a library recently called System.Numerics which can deal with big integers. Let's give it a spin.
 
 Before we start looking for primes larger that 9223372036854775783, let's search for our first test prime of 
-so that we can benchmark the difference between a long seach and a BigInteger search.
+so that we can benchmark the difference between a long search and a BigInteger search.
 
-There are a few new concepts here. Firstly, there is no Math.Sqrt() for BigInteger, so we had to roll our own. Here is a sample on getting the Sqrt of a BigInteger. I have implemented this as an extension method. This is derived from the following slackover post with a few optonisiations.
+There are a few new concepts here. Firstly, there is no Math.Sqrt() for BigInteger, so we had to roll our own. Here is a sample on getting the Sqrt of a BigInteger. I have implemented this as an extension method. This is derived from the following stackoverflow post with a few tweaks. Here is the code to calculate the sqrt:
 
-Here is the code to calculate the sqrt.
 
           public static BigInteger Sqrt(this BigInteger n)
             {
@@ -152,6 +151,6 @@ This is approx 8 times slower than the previous calculation, but gives us a much
         Found a new prime: 9,223,372,036,854,775,837. Time Taken = 1,550,355 msec
         Found a new prime: 9,223,372,036,854,775,907. Time Taken = 1,884,315 msec
 
-Our next optomisation: We actualy don't need to check every number, because if the number we are about to check is not a prime, it would already have been identified by one of it's divisors, so we actually only need to check that it can be divided by a lower prime number. So, a new algorithm would be to have a array of every number between 2 and our candidate, and flag this number as true if it's a prime, or false if it's not a prime, and as we build up each candidate, we can first check if this number exists in our array first. Let's see what happens if we try this.
+Our next optimisation: We actually don't need to check every number, because if the number we are about to check is not a prime, it would already have been identified by one of it's divisors, so we actually only need to check that it can be divided by a lower prime number. So, a new algorithm would be to have a array of every number between 2 and our candidate, and flag this number as true if it's a prime, or false if it's not a prime, and as we build up each candidate, we can first check if this number exists in our array first. Let's see what happens if we try this.
 
-Now, we quickly run out of memory if we do this, so what we can do is provide a service that caches the previous primes that we have persistned to storage, so that we don't have out of memory issues. That's our next step.
+Now, we quickly run out of memory if we do this, so what we can do is provide a service that caches the previous primes that we have persisted to storage, so that we don't have out of memory issues. That's our next step.
